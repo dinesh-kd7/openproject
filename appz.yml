@@ -13,7 +13,7 @@ build:
 deploy:
     context: dinesh-kd7/DEV
     type: statefulset
-    replicas: 2
+    replicas: 1
     port:
     - 80
 volumes:
@@ -36,4 +36,4 @@ properties:
     POSTGRES_USER: openproject
     POSTGRES_PASSWORD: 
       vault: POSTGRESQL_OPENPROJECT_PASSWORD
-    revision: 33
+    revision: 34
